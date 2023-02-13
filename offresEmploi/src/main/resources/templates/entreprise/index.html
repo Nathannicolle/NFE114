@@ -1,0 +1,9 @@
+{{> partials/header.html}}
+    <h1>Entreprises</h1>
+    <a href="/entreprise/new">Ajouter une entreprise</a>
+    <ul>
+        {{#entreprise}}}
+            <li>{{rs}} - {{email}}</li>
+        {{/entreprise}}
+    </ul>
+{{> partials/footer.html}}
