@@ -42,7 +42,16 @@ class EntrepriseController {
     @GetMapping("/edit/{id}")
     fun editEntreprise(@PathVariable id : Int, model : ModelMap) : String
     {
-        model["specificEntreprise"] = entrepriseRepository.findById(id);
+        var entrepriseByID = entrepriseRepository.findById(id);
+        model.addAttribute("entrepriseByID", entrepriseByID);
+        // model["specificEntreprise"] = ;
         return "/entreprise/edit";
+    }
+
+    @GetMapping("/delete/{id}")
+    fun deleteEntreprise(@PathVariable id : Int) : RedirectView
+    {
+        entrepriseRepository.deleteById(id);
+        return RedirectView("/entreprise");
     }
 }
