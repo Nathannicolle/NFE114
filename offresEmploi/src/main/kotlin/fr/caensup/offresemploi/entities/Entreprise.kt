@@ -27,5 +27,6 @@ open class Entreprise {
     @Column(length = 10)
     open var tel : String?=null
 
-
+    @Column(length = 80)
+    open var email : String?=null
 }

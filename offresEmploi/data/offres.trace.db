@@ -1,0 +1,23 @@
+2023-02-14 16:36:31 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ENTREPRISE" non trouvée
+Table "ENTREPRISE" not found; SQL statement:
+DROP TABLE entreprise [42102-214]
+2023-02-14 16:36:38 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "[*]DROPTABLE entreprise"; attendu "DELETE, DROP, DECLARE, DEALLOCATE"
+Syntax error in SQL statement "[*]DROPTABLE entreprise"; expected "DELETE, DROP, DECLARE, DEALLOCATE"; SQL statement:
+DROPTABLE entreprise [42001-214]
+2023-02-14 16:36:50 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Erreur de syntaxe dans l'instruction SQL "DROP [*]entreprise"; attendu "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"
+Syntax error in SQL statement "DROP [*]entreprise"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+DROP entreprise [42001-214]
+2023-02-14 16:37:47 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ENTREPRISE" non trouvée
+Table "ENTREPRISE" not found; SQL statement:
+DROP TABLE entreprise [42102-214]
+2023-02-14 16:37:49 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ENTREPRISE" non trouvée
+Table "ENTREPRISE" not found; SQL statement:
+DROP TABLE entreprise [42102-214]
+2023-02-14 16:38:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "entreprise" not found (this database is empty); SQL statement:
+select e1_0."id",e1_0."adresse",e1_0."cp",e1_0."rs",e1_0."tel",e1_0."ville" from "entreprise" e1_0 [42104-214]
