@@ -1,9 +1,9 @@
 {{> partials/header}}
-    <h1>Entreprises</h1>
-    <a href="/entreprise/new">Ajouter une entreprise</a>
-    <ul>
+    <h1 class="title">Entreprises</h1>
+    <a href="/entreprise/new" class="button is-success">Ajouter une entreprise</a>
+    <ul class="content">
         {{#entreprise}}
-            <li>{{rs}} - {{email}} <a href="/entreprise/edit/{{id}}">edit</a> - <a href="/entreprise/delete/{{id}}">delete</a></li>
+            <li class="content">{{rs}} - {{email}} <a href="/entreprise/edit/{{id}}" class="button is-info is-light">edit</a><a href="/entreprise/delete/{{id}}" class="button is-danger">delete</a></li>
         {{/entreprise}}
     </ul>
 {{> partials/footer}}

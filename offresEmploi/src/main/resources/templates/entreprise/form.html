@@ -1,10 +1,10 @@
 {{> partials/header}}
-    <h1>Entreprise</h1>
-    <form method="post" action="/entreprise/new">
+    <h1 class="title">Entreprise</h1>
+    <form method="post" action="/entreprise/new" class="">
         {{# entreprise}}
-            <input type="text" name="rs" id="rs" placeholder="Raison sociale de l'entreprise">
-            <input type="email" name="email" id="email" placeholder="Email">
-            <button type="submit">Créer</button>
+            <input type="text" name="rs" id="rs" placeholder="Raison sociale de l'entreprise" class="input">
+            <input type="email" name="email" id="email" placeholder="Email" class="input">
+            <button type="submit" class="button is-success">Créer</button>
         {{/ entreprise}}
     </form>
 </body>

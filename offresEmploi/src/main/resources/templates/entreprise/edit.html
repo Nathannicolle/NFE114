@@ -1,8 +1,8 @@
 {{ > partials/header }}
-  <h1>Edit entreprise</h1>
+  <h1 class="title">Edit entreprise</h1>
   <form method="post" action="/entreprise/update/{{id}}">
-        <input type="text" name="rs" id="rs" placeholder="Raison sociale de l'entreprise">
-        <input type="email" name="email" id="email" placeholder="Email">
-        <button type="submit">Modifier</button>
+      <input type="text" name="rs" id="rs" placeholder="Raison sociale de l'entreprise" value="{{specificEntreprise.rs}}" class="input">
+      <input type="email" name="email" id="email" placeholder="Email" value="{{specificEntreprise.email}}" class="input">
+      <button type="submit" class="button is-success">Modifier</button>
   </form>
 {{ > partials/footer }}

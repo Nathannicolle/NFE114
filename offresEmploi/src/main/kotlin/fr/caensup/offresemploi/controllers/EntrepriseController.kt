@@ -45,8 +45,8 @@ class EntrepriseController {
     fun editEntreprise(@PathVariable id : Int, model : ModelMap) : String
     {
         var entrepriseByID = entrepriseRepository.findById(id);
-        model.addAttribute("entrepriseByID", entrepriseByID);
-        // model["specificEntreprise"] = ;
+        // model.addAttribute("entrepriseByID", entrepriseByID);
+        model["specificEntreprise"] = entrepriseByID;
         return "/entreprise/edit";
     }
 
