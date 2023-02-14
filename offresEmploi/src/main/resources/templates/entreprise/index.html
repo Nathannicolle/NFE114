@@ -3,7 +3,7 @@
     <a href="/entreprise/new">Ajouter une entreprise</a>
     <ul>
         {{#entreprise}}
-            <li>{{rs}} - {{email}}</li>
+            <li>{{rs}} - {{email}} <a href="/entreprise/edit/{{id}}">edit</a></li>
         {{/entreprise}}
     </ul>
 {{> partials/footer}}
