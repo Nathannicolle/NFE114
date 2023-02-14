@@ -48,6 +48,12 @@ class EntrepriseController {
         return "/entreprise/edit";
     }
 
+    @PostMapping("/update")
+    fun updateEntreprise(@ModelAttribute updatedEntreprise: Entreprise) : RedirectView {
+        entrepriseRepository.save(updatedEntreprise);
+        return RedirectView("/entreprise");
+    }
+
     @GetMapping("/delete/{id}")
     fun deleteEntreprise(@PathVariable id : Int) : RedirectView
     {
